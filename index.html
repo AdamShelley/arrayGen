@@ -35,6 +35,12 @@
               name="result-area-array"
               id="result-area-array"
             ></textarea>
+            <span class="copy-button" onClick="copyToClipboard('array')"
+              >c</span
+            >
+          </div>
+          <div class="copy-container">
+            <p class="copied-to-clipboard" id="copy1">Copied to clipboard!</p>
           </div>
         </section>
         <section>
@@ -57,6 +63,12 @@
               name="result-area-object"
               id="result-area-object"
             ></textarea>
+            <span class="copy-button" onClick="copyToClipboard('object')"
+              >c</span
+            >
+          </div>
+          <div class="copy-container">
+            <p class="copied-to-clipboard" id="copy2">Copied to clipboard!</p>
           </div>
         </section>
         <section>
@@ -79,7 +91,11 @@
               name="result-area-random"
               id="result-area-random"
             ></textarea>
+            <span class="copy-button" onClick="copyToClipboard('random')"
+              >c</span
+            >
           </div>
+          <p class="copied-to-clipboard" id="copy3">Copied to clipboard!</p>
         </section>
       </div>
     </main>
