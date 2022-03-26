@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Testing Generator</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Test Gens</h1>
+        <p>
+          For testing purposes, I use for generating arrays and objects when
+          testing functions
+        </p>
+
+        <section>
+          <h2>Array Generators</h2>
+          <div class="input-area">
+            <input id="input-area-array" type="number" />
+            <label for="input-area-array">How long should the array be?</label>
+            <button
+              class="generate-button"
+              id="generate-button-array"
+              onClick="generate(this.id)"
+            >
+              Generate!
+            </button>
+          </div>
+          <div class="result-area">
+            <textarea
+              name="result-area-array"
+              id="result-area-array"
+            ></textarea>
+          </div>
+        </section>
+        <section>
+          <h2>Object Generators</h2>
+          <div class="input-area">
+            <input id="input-area-object" type="number" />
+            <label for="input-area-object"
+              >How long should the object be?</label
+            >
+            <button
+              class="generate-button"
+              id="generate-button-object"
+              onClick="generate(this.id)"
+            >
+              Generate!
+            </button>
+          </div>
+          <div class="result-area">
+            <textarea
+              name="result-area-object"
+              id="result-area-object"
+            ></textarea>
+          </div>
+        </section>
+        <section>
+          <h2>Random Generators</h2>
+          <div class="input-area">
+            <input id="input-area-random" type="number" />
+            <label for="input-area-random"
+              >How long do you want the random array to be?</label
+            >
+            <button
+              class="generate-button"
+              id="generate-button-random"
+              onClick="generate(this.id)"
+            >
+              Generate!
+            </button>
+          </div>
+          <div class="result-area">
+            <textarea
+              name="result-area-random"
+              id="result-area-random"
+            ></textarea>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
