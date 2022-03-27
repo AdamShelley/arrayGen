@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A testing generator for functions and algorithms"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Testing Generator</title>
@@ -35,6 +39,9 @@
               name="result-area-array"
               id="result-area-array"
             ></textarea>
+            <label class="screenReaderOnly" for="result-area-array"
+              >Result Area</label
+            >
             <span class="copy-button" onClick="copyToClipboard('array')"
               >c</span
             >
@@ -62,7 +69,10 @@
             <textarea
               name="result-area-object"
               id="result-area-object"
-            ></textarea>
+            ></textarea
+            ><label for="result-area-object" class="screenReaderOnly"
+              >Result Area</label
+            >
             <span class="copy-button" onClick="copyToClipboard('object')"
               >c</span
             >
@@ -90,7 +100,10 @@
             <textarea
               name="result-area-random"
               id="result-area-random"
-            ></textarea>
+            ></textarea
+            ><label for="result-area-random" class="screenReaderOnly"
+              >Result Area</label
+            >
             <span class="copy-button" onClick="copyToClipboard('random')"
               >c</span
             >

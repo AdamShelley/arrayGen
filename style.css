@@ -65,7 +65,7 @@ section {
 .input-area button {
   padding: 1rem;
   width: 8rem;
-  background-color: #2ca58d;
+  background-color: #116e5c;
   border: 1px solid #fffdf6;
   color: inherit;
   font-weight: 500;
@@ -97,6 +97,17 @@ section {
   border-radius: 2px;
   color: #fffdf7;
   font-size: 1rem;
+}
+
+.screenReaderOnly {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .copy-container {
