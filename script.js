@@ -62,7 +62,23 @@ function generateRandom() {
   if (randomInput.value <= 0 && !randomInput.value.match(numbers)) {
     randomOutput.innerHTML = "Please choose a number above 0";
   } else {
-    randomOutput.innerHTML = "Oops not working yet...";
+    let randomArray = [];
+
+    for (let i = 0; i < randomInput.value; i++) {
+      let randomNum = Math.floor(Math.random() * 999 + 1);
+      if (randomNum % 2 === 0) {
+        let randomObject = {};
+        let randomKey = Math.random().toString(36).substring(2, 7);
+        let randomProperty = Math.random().toString(36).substring(2, 7);
+
+        randomObject[randomKey] = randomProperty;
+        randomArray.push(randomObject);
+      } else {
+        randomArray.push(randomNum);
+      }
+    }
+
+    randomOutput.innerHTML = JSON.stringify(randomArray);
   }
 }
 
